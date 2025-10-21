@@ -427,7 +427,7 @@ img {
   width: 100%;
   min-height: 100vh;
   margin-left: 40px;
-  background-image: url(/assets/pexels-goumbik-349610.jpg); /* your image */
+  background-image: url(assets/pexels-goumbik-349610.jpg); /* your image */
   background-size: cover;        /* make it fill the section */
   background-position: center;   /* center the image */
   background-repeat: no-repeat;  /* avoid tiling */
@@ -437,7 +437,6 @@ img {
   padding: 100px 20px;
   
 }
-
 
 .testimonial-title h2{
 
@@ -538,7 +537,7 @@ img {
   right: 40px;       /* distance from right */
   width: 450px;      /* adjust size */
   height: 450px;
-  background-image: url("http://coreybrothers.com/wp-content/uploads/2018/01/Tomatoes-cutting-board.jpg");
+  background-image: url("assets/Tomatoes-cutting-board.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
