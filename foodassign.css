@@ -427,12 +427,12 @@ img {
   width: 100%;
   min-height: 100vh;
   margin-left: 40px;
-  background-image: url(/assests/pexels-goumbik-349610.jpg); /* your image */
+  background-image: url(/assets/pexels-goumbik-349610.jpg); /* your image */
   background-size: cover;        /* make it fill the section */
   background-position: center;   /* center the image */
   background-repeat: no-repeat;  /* avoid tiling */
   background-attachment: fixed;  /* optional: makes it stay fixed when scrolling */
-  color: white;                  /* contrast for text */
+  color: black;                  /* contrast for text */
   text-align: center;
   padding: 100px 20px;
   
