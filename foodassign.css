@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+p {
+  font-weight: 300;
+  color: #111;
+}
+
+
+section {
+  padding: 50px;
+}
+
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgb(255, 255, 255);
+  padding:10px;
+  position: fixed;
+  z-index: 100;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.logo {
+  color: #111;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ff0157;
+}
+
+nav ul{
+
+  width:100%;
+  list-style: none;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+
+}
+
+nav li {
+
+  height: 50px;
+
+
+}
+
+nav a {
+
+  height:100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color:black;
+  
+
+}
+
+nav li:first-child{
+
+  margin-right:auto;
+
+}
+
+.sidebar{
+    position: fixed; 
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgba(0 0 0 0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sidebar li {
+    width:100%;
+
+}
+
+.sidebar a{
+    width:100%;
+}
+
+/* Hover and active effects */
+nav a:hover,
+nav  a:active {
+  border-bottom: 3px solid  #ff0157;
+}
+
+
+.material-symbols-outlined.menu {
+  display: none;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+
+@media (max-width: 798px) {
+    
+    .hideOnMobile{
+        display:none;
+    }
+
+    
+.material-symbols-outlined.menu{
+
+   display: inline-block;
+    font-size: 40px;
+    cursor: pointer;  
+    color:#ff0157;
+}
+
+.material-symbols-outlined.close{
+
+   display: inline-block;
+    font-size: 40px;
+    cursor: pointer;  
+    color:#ff0157;
+
+}
+
+}
+  
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(https://platform.philly.eater.com/wp-content/uploads/sites/8/chorus/uploads/chorus_asset/file/24820884/Mike_Prince.jpeg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=1440);
+  background-size: cover;
+}
+
+.content {
+  max-width: 900px;
+  text-align: center;
+}
+
+
+
+.home .content .title h2 {
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  width:100%;
+}
+
+.home .content .title p {
+  font-size: 1em;
+  color: white;
+}
+
+.home-button {
+  font-size: 1.5em;
+  color: white;
+  background-color: #ff0157;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-top: 40px;
+  display: inline-block;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius:6px;
+
+}
+
+/*About*/ 
+
+.about {
+  padding:80px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+  margin-left: 40px;
+ 
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.row .col50 {
+  width: 48%;
+}
+
+.para-1 , .para-2{
+
+margin-right: 5px;
+
+}
+
+.image-a {
+  width: 100%;
+  min-height: 300px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px lightgray;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-about {
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.text-about span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+/*Menu*/ 
+
+.menu {
+  padding:80px;
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 40px;
+  background:white;
+  
+}
+
+.menu-title h2
+  {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-title  span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.menu-title p
+{
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.cards-container .card {
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px lightgray;
+}
+
+.image-m{
+
+    width: 100%;
+    height: 300px;
+
+}
+
+.image-a .img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-text{
+
+  text-align: center;
+  padding: 15px 0 5px;
+
+}
+
+.card-btn {
+  display: block;          /* make it a block so margins apply */
+  margin: 40px auto 0;     /* auto centers horizontally */
+  font-size: 1.5em;
+  color: white;
+  background-color: #ff0157;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #e6004c;
+  transform: scale(1.05);
+}
+
+/*Experts*/ 
+
+.expert {
+  padding:80px;
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 40px;
+  background:white;
+  margin-bottom: 20px;;
+  
+}
+
+.experts-title h2{
+
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+
+.experts-title  span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.experts-title p{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecards-container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+    align-items: center;
+}
+
+.e-card {
+
+    width: 250px;
+    margin: 30px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+   
+}
+
+.e-image-m{
+
+    width: 100%;
+    height: 300px;
+
+}
+
+.e-image-m img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.e-card-text{
+
+  text-align: center;
+  padding: 15px 0 5px;
+
+}
+
+
+/*Testimonials*/ 
+
+.testimonials {
+  padding:80px;
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 40px;
+  background-image: url(/assests/pexels-goumbik-349610.jpg); /* your image */
+  background-size: cover;        /* make it fill the section */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;  /* avoid tiling */
+  background-attachment: fixed;  /* optional: makes it stay fixed when scrolling */
+  color: white;                  /* contrast for text */
+  text-align: center;
+  padding: 100px 20px;
+  
+}
+
+
+.testimonial-title h2{
+
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-title  span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.testimonial-title p{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tcards-container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.t-card {
+
+    width: 340px;
+    margin: 30px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+   
+}
+
+.t-image-m{
+
+    width: 100%;
+    height: 400px;
+
+}
+
+.t-image-m img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 48%;
+}
+
+.t-card-text{
+
+  text-align: center;
+  padding: 15px 0 5px;
+
+}
+
+.t-card-text h3{
+
+  text-align: center;
+  padding: 15px 0 5px;
+  padding: 10px;
+  font-size: 1.5em;
+  
+
+}
+
+.t-card-text h3  span {
+  color: #ff0157;
+
+}
+
+/*Contact Us*/ 
+
+
+.contact-us {
+  position: relative;
+  padding: 100px 20px;
+  width: 100%;
+  margin-top: 60px;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden; /* ensures rotated image doesn't overflow */
+  background-color: white; /* fallback color */
+}
+
+/* Use a pseudo-element for precise control */
+.contact-us::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;      /* distance from bottom */
+  right: 40px;       /* distance from right */
+  width: 450px;      /* adjust size */
+  height: 450px;
+  background-image: url("http://coreybrothers.com/wp-content/uploads/2018/01/Tomatoes-cutting-board.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-15deg);   /* rotate the image slightly */
+  opacity: 0.8;                /* make it subtle */
+  z-index: 0;                  /* keep behind text */
+}
+
+.contact-us * {
+  position: relative;
+  z-index: 1; /* keeps text above the image */
+}
+
+
+.c-titletext h2{
+
+    margin-top:60px;
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+
+}
+
+.c-titleText  span {
+  color: #ff0157;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.c-titleText p{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactform h3 {
+
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+
+
+.contactform input{
+
+  position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+
+.contactform .inputbox input, 
+.contactform .inputbox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+
+}
+
+ 
+.contactform .inputbox input[type="submit"] {
+  background-color: #ff0157;
+    color: white;
+    border: none;
+    font-size: 1em;
+    width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px;
+    display: flex;
+    letter-spacing:2px;
+    font-weight:500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.contactform .inputbox input[type="submit"]:hover {
+  background-color: #e6004e;
+  transform: scale(1.05);
+}
+
+
+footer{
+
+    background: #ff0157;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
